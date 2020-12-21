@@ -30,4 +30,6 @@ diff nextjs-build-id-issue-1/.next/build-manifest.json nextjs-build-id-issue-2/.
 
 ## Notes
 
-Note that `generateBuildId` in `next.config.js` returns a constant value. The expectation is that build assets will be named the same because of this.
+- Note that `generateBuildId` in `next.config.js` returns a constant value. The expectation is that build assets will be named the same because of this.
+
+- If you build the project twice in the same folder, all of the asset files will be named the same. Even if you delete the `.next` folder and rebuild, the files will have the same names.
